@@ -1,8 +1,7 @@
 *{
     margin: 0px;
 }
-
-
+/*controle da barra nav */
 .nav-menu{
     font-family:'Times New Roman', Times, serif;
     background-color: black;
@@ -11,51 +10,55 @@
     align-items: center;
     padding: 0px 130px 0px 130px;
     
-}
-@media (max-width: 730px) {
+} /*media query para o menu */
+@media (max-width: 810px) {
     .conteiner-menu {
-    display: none;
     flex-direction: column;
     justify-content: center;
-   
   }.nav-menu{
    padding: 0px 30px 0px 30px;
-  }}
+  } 
+  .section-apresentacao{
+    flex-direction: column;
+    align-items:center;
+  }
+   .list-icons {
+    padding-top: 8px;
+  }
+  main {
+    padding:50px;
+  }
+  }
 .img-logo{
     display: flex;
     width: 100px;
     height: 90px;
 }
-a{
-    font-size: larger;
-    color: white;
-}
 ul {
     list-style: none;   
-    display: flex;
-   justify-content: space-between;
+    display:flex;
 }
-
-li {
-    display: flex;
-    width: 80px;
-}
-
-i {
-  font-size: 30px;
-  color: white;
-}
-
 .conteiner-menu{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    border: 2px solid;
+    display:flex;
+    align-items: end;
+    justify-content: center;
+    color:white;
 } 
 .conteiner-menu > img{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
 }
+.lista-menu, i{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    width: 90px;
+}
+
 .lista-menu:hover, i:hover {
   color: gray;  
 }
@@ -75,20 +78,20 @@ i {
 .p1-apresentacao{
     margin: 10px 0px 10px 0px;
 }
-
 .section-apresentacao{
     display: flex;
     justify-content: space-around;
 }
-.apresentacao, .img-apresentacao{
+
+.apresentacao,.img-apresentacao{
     display: flex;
     flex-direction:column;
-    align-items: start;
-    justify-content: center;
-    width :400px;
-    height: 500px;
+    justify-content: start;
+    width :350px;
+    height: 350px;
+    padding:20px 0px 20px 0px;
 }
 .gstvimg{
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
