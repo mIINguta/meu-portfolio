@@ -203,7 +203,7 @@ footer ul{
   .section-projetos, .section-apresentacao, .sec-tecnologias, .sec-habilidades{
    display: flex;
    flex-direction: column;
-   height: 80%;
+   height: 100vh;
    
   }
    .btn-menu,.list-icons {
@@ -218,8 +218,5 @@ footer ul{
     overflow-x: scroll;
     flex-direction: row;
   }
-  .div-conteiner{
-    
-    
-  }
+ 
 }
