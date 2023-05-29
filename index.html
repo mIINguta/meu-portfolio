@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/67fa80b427.js" crossorigin="anonymous"></script>
     <title>GM | PORTFÓLIO</title>
 </head>
 <body>
     <header>
        <nav class="nav-menu">
-       <img class= "img-logo" src="imagens/G_1_-removebg-preview.png">
+       <img class= "img-logo" src="imagens/logo.svg">
         <ul class="btn-menu">
          <li><a href="index.html">sobre</a></li>
          <li> <a href="#">projetos</a></li>
          <li> <a href="#">tecnologias</a></li>
+         <li> <a href="#">experiências</a></li>
         </ul>
          <ul class="list-icons">
          <li>
@@ -41,11 +43,11 @@
     <main>
         <section class="section-apresentacao">
         <div class="apresentacao">
-        <h1 class="h1-apresentacao">sobre</h1>
+        <h1>sobre</h1>
         <h2 class ="h2-apresentacao">meu nome é Gustavo da Silva Minguta, sou Desenvolvedor Web </h2>
-        <p class ="p1-apresentacao">Formado em Sistemas de Informação na Universidade Unigranrio.
+        <p class ="p-apresentacao">Formado em Sistemas de Informação na Universidade Unigranrio.
             Este é meu portfolio. Aqui você me conhece como pessoa e como programador. 
-            Sou apaixonado por aprender coisas novas e amo a sensação de estar criando ou sendo a solução de um problema.
+            Sou apaixonado por aprender coisas novas e amo a sensação de estar criando ou sendo a <span>solução</span> de um problema.
         </p>
         <p></p>
         </div>
@@ -53,25 +55,83 @@
             <img class="gstvimg" href= "" src= "imagens/eu-apresentacao.png">
         </section>
         <section class="section-projetos">
-            <div class="apresentacao-proj">
-            <h1 class="h1-projetos">projetos</h1>
-            <h2 class ="h2-projetos">aqui estão alguns projetos que me orgulho de ter desenvolvido</h2>
-            <p class ="p1-projetos"> No ano de 2023 desenvolvi um site para o escritório onde trabalho
-                utilizando HTML, CSS E Java Script. O Regue-me foi um aplicativo feito para meu TCC, juntamente com dois amigos
-                o objetivo era instruir e motivar as pessoas a cuidar de suas plantas de forma gamificada. Foi usado a plataforma Kodular
-                para o desenvolvimento do aplicativo. Clique nos respectivos icones para saber mais.
+            <div class="div-texto">
+            <h2>projetos</h2>
+            <h3 class ="h3-proj">aqui estão alguns projetos que me orgulho de ter desenvolvido</h3>
+            <p class ="p-proj"> Site da MM Assessoria Contábil, desenvolvido em 2023, escritório onde trabalho e o Regue-me, desenvolvido em 2021, juntamente com meus amigos para o TCC. Clique nos respectivos icones para saber mais.
             </div>
-            <div class="conteiner-projetos">
-                <div id="card1" class="card">
-                    <img src="imagens/proj1.png"/>
+            <div class="div-conteiner">
+                <figure id="card1" class="card" title="Site M&M Assessoria Contábil">
+                  <a onclick="abrirDesc(1)"><img src="imagens/proj1.png"/><a href="https://miinguta.github.io/projeto-site-mmac/"id="link-site" target="_blank">visite</a>
+                </figure>
+                <figure id="card2" class="card" title="Regue-me">
+                    <a onclick="abrirDesc(2)"><img src="imagens/proj2white.svg"/></a>
+                </figure>
+            </section>
+            <section class="sec-tecnologias">
+                <div class="div-texto">
+                <h2>tecnologias</h2>
+                <h3 class="h3-tec"> Aqui estão as tecnologias que uso no meu dia-a-dia</h2>   
+            </div>
+                <div id="conteinertec" class="div-conteiner">
+                    <figure id="cardtec" class="card html" title="HTML">
+                        <img src="imagens/icons/html5.svg " alt="Icone HTML"/>
+                    </figure>
+                    <figure id="cardtec" class="card css" title="CSS">
+                        <img src="imagens/icons/css3-alt.svg" alt="Ícone CSS"/>
+                    </figure>
+                    <figure id="cardtec" class="card js" title="JavaScript">
+                        <img src="imagens/icons/js.svg" alt="Ícone Java Script"/>
+                    </figure>
+                    <figure id="cardtec" class="card njs" title="Node Js">
+                        <img src="imagens/icons/node.svg" alt="Ícone NodeJS"/>
+                    </figure>
+                    <figure id="cardtec" class="card py" title="Python">
+                        <img src="imagens/icons/python.svg" alt="Ícone Python"/>
+                    </figure>
+                    <figure id="cardtec" class="card wp" title="WordPress">
+                        <img src="imagens/icons/wordpress.svg" alt="Ícone WordPress"/>
+                    </figure>
+                    
                 </div>
-                <div id="card1" class="card">
-                    <img src="imagens/proj2white.svg"/>
-                </div>
+            </section>
+            <section class="sec-habilidades">
+                <div class="div-texto">
+                <h2>experiências</h2>
+                <h3 class="h3-hb">um breve resumo sobre minha vida profissional</h3>
+                <p class="p-hb">Atualmente, trabalho em um escritório de contabilidade. Aqui eu atuo como suporte, resolvendo problemas referente as máquinas e impressoras. Quando tenho tempo vago, busco aprimorar e automatizar rotinas ex: Gerar notas fiscais. Ao lado, citei algumas habilidades que considero meu forte.</p>
+            </div>
+                <div class="div-conteiner">
+                <ul>
+                    <li><a id="proatividade" onclick="abrirHb('#proatividade')">Proatividade</a></li>
+                    <li><a id="comunicacao" onclick="abrirHb('#comunicacao')">Comunicação</a></li>
+                    <li><a id="compromisso" onclick="abrirHb('#compromisso')">Compromisso</a></li>
+                    <li><a id="trabalhoeq" onclick="abrirHb('#trabalhoeq')">Trabalho em Equipe</a></li>
+                </ul>
+            </div>
             </section>
 </main>
     <footer>
         <h4>Feito por <a href="#">Gustavo Minguta</a> em 2023</h4>
+        <ul class="list-footer">
+            <li>
+               <a href="https://github.com/mIINguta" target="_blank">
+                   <i class="fa-brands fa-github"></i>
+               </a></li>
+            <li>
+               <a href="https://www.instagram.com/gustavominguta/" target="_blank">
+                   <i class="fa-brands fa-instagram"></i>
+               </a></li>
+            <li>
+               <a href="https://www.linkedin.com/in/gustavominguta/" target="_blank">
+                   <i class="fa-brands fa-linkedin-in"></i>
+               </a></li>
+               <li>
+                   <a href="https://www.linkedin.com/in/gustavominguta/" target="_blank">
+                       <i class="fa-brands fa-whatsapp"></i>
+                   </a></li>
+           </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
